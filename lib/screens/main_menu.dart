@@ -94,7 +94,7 @@ class MainMenuState extends State<MainMenu> {
             new Container(
                 child: new ListTile(
                     leading: new Image.asset('assets/images/lion.png'),
-                    title: Text("--user--")),
+                    title: Text("--username--")),
                 margin: new EdgeInsetsDirectional.only(top: 20.0),
                 color: Colors.white,
                 constraints: BoxConstraints(maxHeight: 90.0, minHeight: 90.0)),
