@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'HomePage.dart';
 
 void main() {
@@ -22,12 +21,14 @@ class LoginDemo extends StatefulWidget {
 }
 
 class _LoginDemoState extends State<LoginDemo> {
+  TextEditingController textFieldController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("Login Page"),
+        title: Text("Are You S.A.D.?"),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -52,6 +53,7 @@ class _LoginDemoState extends State<LoginDemo> {
                     border: OutlineInputBorder(),
                     labelText: 'Email',
                     hintText: 'Enter valid email id as abc@gmail.com'),
+                controller: textFieldController,
               ),
             ),
             Padding(
@@ -80,10 +82,12 @@ class _LoginDemoState extends State<LoginDemo> {
               width: 250,
               decoration: BoxDecoration(
                   color: Colors.blue, borderRadius: BorderRadius.circular(20)),
+              // ignore: deprecated_member_use
               child: FlatButton(
                 onPressed: () {
                   Navigator.push(
                       context, MaterialPageRoute(builder: (_) => HomePage()));
+                  //_sendDataToSecondScreen(context);
                 },
                 child: Text(
                   'Login',
@@ -101,3 +105,15 @@ class _LoginDemoState extends State<LoginDemo> {
     );
   }
 }
+/*
+void _sendDataToSecondScreen(BuildContext context) {
+  String textToSend = textFieldController.text;
+  Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => HomePage(
+          text: textToSend,
+        ),
+      ));
+}
+*/

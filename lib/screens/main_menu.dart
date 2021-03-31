@@ -8,6 +8,7 @@ import 'package:flutter_side_menu/screens/Treatment.dart';
 import 'package:flutter_side_menu/screens/MyScore.dart';
 import 'package:flutter_side_menu/screens/Feed.dart';
 import 'package:flutter_side_menu/screens/Logout.dart';
+import 'package:flutter_side_menu/main.dart';
 
 class MainMenu extends StatefulWidget {
   @override
@@ -94,7 +95,8 @@ class MainMenuState extends State<MainMenu> {
             new Container(
                 child: new ListTile(
                     leading: new Image.asset('assets/images/lion.png'),
-                    title: Text("--username--")),
+                    title: Text(
+                        "--username--")), //change to parameter from HomePage
                 margin: new EdgeInsetsDirectional.only(top: 20.0),
                 color: Colors.white,
                 constraints: BoxConstraints(maxHeight: 90.0, minHeight: 90.0)),

@@ -21,15 +21,14 @@ class AlertWithButtonsWidget extends State {
           title: Text('You are about to logout'),
           content: Text("Are You Sure Want To Logout?"),
           actions: <Widget>[
+            // ignore: deprecated_member_use
             FlatButton(
-              child: Text("YES"),
               onPressed: () {
-                Text("""Goodbye""");
-
                 //Put your code here which you want to execute on No button click.
                 Navigator.push(
-                    context, MaterialPageRoute(builder: (_) => LoginDemo()));
+                    context, MaterialPageRoute(builder: (_) => MyApp()));
               },
+              child: Text("YES"),
             ),
             FlatButton(
               child: Text("NO"),
