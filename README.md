@@ -35,3 +35,12 @@ A list of technologies used within the project:
 Prerequisite: Must have all the listed technologies above, with working Flutter SDK, and JDK
 
 Copy the current files to the local machine, run within Android Studios.
+
+### How to run code
+(note: pls refer to main branch)
+1) Brute force method -> download zip files of project
+2) extract all zip files into the directory THAT CONTAINS FLUTTER SDK/JDK
+3) Download and Install Android Studios
+4) Click on File -> New -> New Flutter Project -> New Flutter application
+5) Click on open (open the files from github currently stored in directory containing flutter sdk.
+6) Click on the <no device selected> and change device to either Chrome or Edge (whichever you choose). 
