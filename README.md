@@ -47,5 +47,6 @@ Copy the current files to the local machine, run within Android Studios.
 
 ### ADDITIONAL NOTES:
 DEMO
+https://youtu.be/FdmWL2413J4
 1) Introduction + Login description (presented by Suraj Janakiraman)
 2) Dashboard/Menu Customization page (presented by Tarun Madhavarapu)
